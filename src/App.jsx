@@ -1,12 +1,17 @@
+import Footer from "./components/Footer";
+import { Layout } from "./components/Layout";
+import Navbar from "./components/Navbar";
 
-
-function App() { 
-
+function App() {
   return (
-     <div>
-      <h1 className="text-3xl text-center py-8 text-gray-600">AI SaaS Image-Generator</h1>
-     </div>
-  )
+    <div className="px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen bg-gradient-to-b from-teal-100 to-orange-100">
+      <Navbar />
+      <div className="container mx-auto">
+        <Layout />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
