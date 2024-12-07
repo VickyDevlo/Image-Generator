@@ -1,5 +1,6 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { assets } from "../../assets/assets";
+import { CustomButton } from "../../shared";
 
 const Banner = () => {
   return (
@@ -21,13 +22,7 @@ const Banner = () => {
         in seconds - just type, and watch the magic happen.
       </p>
 
-      <button
-        className="sm:text-lg text-white bg-black w-auto mt-8 px-12 py-2.5
-        flex items-center gap-2 rounded-full"
-      >
-        Generate Images
-        <img src={assets.star_group} alt="star_group_img" className="h-6" />
-      </button>
+      <CustomButton />
 
       <div className="flex flex-wrap justify-center gap-3 mt-12">
         {Array(6)
