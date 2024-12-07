@@ -1,8 +1,11 @@
 import React from "react";
 import { assets } from "../../assets/assets";
 import { CustomButton } from "../../shared";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col justify-center items-center text-center my-20">
       <div
@@ -22,7 +25,11 @@ const Banner = () => {
         in seconds - just type, and watch the magic happen.
       </p>
 
-      <CustomButton image={assets.star_group} btnText={"Generate Images"} />
+      <CustomButton
+        image={assets.star_group}
+        btnText={"Generate Images"}
+        onClick={() => navigate("/result")}
+      />
 
       <div className="flex flex-wrap justify-center gap-3 mt-12">
         {Array(6)
