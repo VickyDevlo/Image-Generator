@@ -22,7 +22,7 @@ const Banner = () => {
         in seconds - just type, and watch the magic happen.
       </p>
 
-      <CustomButton />
+      <CustomButton image={assets.star_group} btnText={"Generate Images"} />
 
       <div className="flex flex-wrap justify-center gap-3 mt-12">
         {Array(6)
